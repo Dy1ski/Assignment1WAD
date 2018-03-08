@@ -19,7 +19,8 @@
 </script>
 <?php
 session_start();
-$conn = mysqli_connect('feenix-mariadb.swin.edu.au', 's100579461', '010296', 's100579461_db')
+// user password db
+$conn = mysqli_connect('feenix-mariadb.swin.edu.au', 'user', 'password', 'db')
 or die('Failed to connect');
 if((isset($_GET["Emailfield"]) && !empty($_GET["Emailfield"])&&(isset($_GET["Pwdfield"]) && !empty($_GET["Pwdfield"]))))
    {
