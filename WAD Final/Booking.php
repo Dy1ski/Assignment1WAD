@@ -31,7 +31,8 @@
 session_start(); // session start for our session variables
 ini_set('error_reporting',0);
 ini_set('display_errors',0);
-$conn = mysqli_connect('feenix-mariadb.swin.edu.au', 's100579461', '010296', 's100579461_db')
+// user password db
+$conn = mysqli_connect('feenix-mariadb.swin.edu.au', 'user', 'password', 'db')
 or die('Failed to connect');
 // connection string for my sql
 if((isset($_GET["Pnfield"]) && !empty($_GET["Pnfield"]))
