@@ -14,7 +14,8 @@
     }
 </script>
 <?php
-  $conn = mysqli_connect('feenix-mariadb.swin.edu.au', 's100579461', '010296', 's100579461_db')
+    // user password db
+  $conn = mysqli_connect('feenix-mariadb.swin.edu.au', 'user', 'password', 'db')
   or die('Failed to connect');
   // sql string that will call the table
   $sqlResult = mysqli_query($conn, "SELECT * FROM PassengerBookings;") or die("This execution task has failed");
